@@ -1,0 +1,523 @@
+/*----------------------Reset-----------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, textarea {
+    outline: 0;
+}
+/*----------------------Fonts-----------------------*/
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+}
+/*-----------------Common settings------------------*/
+#main {
+	font-family: Arial;
+	margin: 0 auto;
+	max-width: 1280px;
+	background-color: #D6D3D3;
+}
+.content_block {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 50px 3.90625%;
+    overflow: hidden;
+}
+.content_block h3 {
+    color:  #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.content_list {
+    overflow: hidden;
+}
+.content_list li {
+    width: 100%;
+    max-width: 50%;
+    float: left;
+    padding: 10px;
+}
+/*------------------------Header-----------------------*/
+#header {
+    background-color: #445162;
+}
+#product_name {
+    float: left;
+    color: #fff;
+}
+#product_image {
+    float: right;
+    max-width: 469px;
+}
+#product_image img {
+    width: 100%;
+}
+#product_name h1 {
+    margin: 0;
+    padding: 0 0 20px 0;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+#product_name ul {
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+#product_name ul li::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 20px;
+    padding-right: 11px;
+}
+/*----------------------About------------------------*/
+#about {
+    background-color: #fff;
+}
+#about_product {
+    float: left;
+    width: 100%;
+    max-width: 55%;
+}
+#about_product h3 {
+    text-align: left;
+    padding-bottom: 0;
+}
+#about_product p {
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding: 10px 0;
+}
+#about_image {
+    float: right;
+    max-width: 430px;
+}
+#about_image img {
+    width: 100%;
+}
+/*----------------------Pluses------------------------*/
+#pluses .plus {
+    width: 32px;
+    float: left;
+    color:  #445162;
+    font-family: FontAwesome;
+    font-size: 32px;
+    position: absolute;
+}
+#pluses .plus_text {
+    width: 100%;
+    position: relative;
+    padding-left: 47px;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+/*----------------------Screenshots----------------------*/
+#screenshots, #buy {
+    background-color: #fff;
+}
+#screenshots ul li, #reviews ul li {
+    padding: 15px 10px;
+    position: relative;
+}
+#screenshots ul li img {
+    float: left;
+    width: 35%;
+}
+
+#screenshots ul li .screenshot_info {
+    width: 65%;
+    float: left;
+    padding: 0 15px;
+}
+
+#screenshots ul li h4 {
+    margin: 0;
+    padding-bottom: 15px;
+    color:  #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/*----------------------Reviews----------------------*/
+#reviews ul li img {
+    width: 75px;
+    border-radius: 50%;
+    position: absolute;
+}
+#reviews ul li .review_info {
+    width: 100%;
+    position: relative;
+    padding-left: 95px;
+}
+#reviews ul li::before {
+    content: ''; 
+    position: absolute;
+    left: 81px;
+    top: 40px;
+    border: 12px solid transparent;
+    border-right: 12px solid #ececec;
+}
+#reviews ul li .review_info p {
+    margin: 0;
+    padding: 15px;
+    background-color: #ececec;
+    color:  #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    border-radius: 10px 10px 0 0;
+}
+#reviews ul li .review_info .caption {
+    padding: 0 15px 15px 15px;
+    background-color: #ececec;
+    color:  #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 0 0 10px 10px;
+}
+/*---------------------Buy it now----------------------*/
+#prices {
+    max-width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#standart, #premium {
+    margin-right: 4.545454545454545%;
+    float: left;
+}
+#standart, #premium, #lux {
+    width: 30.3030303030303%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#premium {
+    left: 35%;
+}
+#lux {
+    position: relative;
+    float: right;
+}
+#prices .bage {
+    border: 2px solid #445162;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #445162;
+}
+.bage h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.bage .price {
+    background-color: #fff;
+    color:  #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 71px;
+    display: block;
+    height: 71px;
+    text-align: center;
+}
+.bage ul {
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+.bage .buy_wrap {
+    padding: 0 20px 20px 20px;
+}
+.bage .buy_button {
+    display: block;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    color:  #445161;
+    -webkit-transition: color 0.5s;-o-transition: color 0.5s;transition: color 0.5s;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.bage .buy_button:hover {
+    color: #989898;
+    -webkit-transition: color 0.5s;-o-transition: color 0.5s;transition: color 0.5s;
+}
+/*---------------------Contacts----------------------*/
+ #contacts {
+     background-color: #445161;
+}
+
+#contacts h3 {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 20px;
+}
+#contacts_row {
+    width: 100%;
+    max-width: 825px;
+    margin: 0 auto;
+}
+#message_form {
+    float: left;
+    width: 100%;
+    max-width: 60.60606060606061%;
+    margin-right: 5.454545454545455%;
+    color: #445162;
+}
+#contacts_data {
+    float: left;
+    width: 100%;
+    max-width: 33.93939393939394%;
+}
+#c_name, #c_mail, #c_message {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    color:  #445162;
+    border: 1px solid #445161;
+    border-radius: 10px;
+    padding-left: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 0;
+}
+#c_name, #c_mail {
+    height: 40px;
+}
+#c_message {
+    height: 170px;
+    resize: none
+}
+#button_row {
+    float: left;
+    width: 100%;
+}
+#send_button{
+    width: 28%;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;    
+    color:  #445162;
+    -webkit-transition: color 0.5s;-o-transition: color 0.5s;transition: color 0.5s;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px auto;
+}
+#message_form #send_button:hover {
+    -webkit-transition: color 0.5s;-o-transition: color 0.5s;transition: color 0.5s;
+    color: #989898;
+}
+/*-------- right--------*/
+#requisites li {
+    float: left;
+    padding-left: 31px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #445162;
+    margin: 10px 0;
+    height: 26px;
+    background-image: url(../img/skype_icon.png);
+    background-repeat: no-repeat;
+}
+#requisites #icq {
+    height: 26px;
+    background-image: url(../img/icq_icon.png);
+}
+#requisites #mail {
+    height: 22px;
+    background-image: url(../img/email_icon.png);
+}
+#requisites #phone {
+    height: 23px;
+    background-image: url(../img/phone_icon.png);
+}
+#social li {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 50%;
+    color:  #445162;
+    text-align: center;
+    float: left;
+    margin-right: 7px;
+}
+#social li a {
+    outline: none;
+    color:  #445162;
+    font-family: FontAwesome;
+    font-size: 24px;
+    line-height: 42px;
+    text-decoration: none;
+    -webkit-transition: color 0.5s;-o-transition: color 0.5s;transition: color 0.5s;
+}
+#social li a:hover {
+    color: #989898;
+    -webkit-transition: color 0.5s;-o-transition: color 0.5s;transition: color 0.5s;
+}
+/*------------------------Media------------------------*/
+@media screen and (max-width: 1070px) {
+    #product_name, #about_product {
+        width: 100%;
+        margin: 0 auto;
+        max-width: none;
+        float: none;
+    }
+    #product_name h1, #about_product h3 {
+        text-align: center;
+    }
+    #product_name ul, #about_product {
+        padding-bottom: 30px;
+    }
+    #product_name ul li, #about_product p {
+        text-align: center;
+    }
+    #product_image, #about_image {
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    .content_list li {
+        max-width: 100%;
+    }
+    #prices {
+        max-width: none;
+        width: 300px;
+        margin: 0 auto;
+    }
+    #standart, #premium, #lux {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+    }
+    #premium {
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    #contacts {
+        text-align: center;
+    }
+    #message_form, #contacts_data {
+        float: none;
+        margin: 0 auto;
+    }
+    #message_form, #contacts_data {
+        max-width: 90%;
+    }
+    #send_button {
+        width: 100%;
+    }
+    #requisites {
+        margin: 30px auto;
+    }
+    #requisites li {
+        float: none;
+        display: inline-block;
+        white-space: nowrap;
+        margin: 10px 20%;
+    }
+    #social li {
+        float: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    #product_image, #about_image {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 560px) {
+    #screenshots ul li .screen_img, #screenshots ul li .screenshot_info {
+        float: none;
+        display: block;
+        padding-bottom: 20px;
+    }
+    #screenshots ul li .screen_img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #screenshots ul li .screenshot_info {
+        width: 100%;
+    }
+}
